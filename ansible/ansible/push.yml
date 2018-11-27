@@ -1,0 +1,16 @@
+---
+- hosts: consul_servers
+  vars:
+    repo: "https://github.com/hankerepo/consul.git"
+    local_repo_dir: "/tmp"
+  remote_user: svc
+  tasks:
+  - name: ensure apache is at the latest version
+    git:
+      name: httpd
+      state: latest
+
+
+- git:
+    repo: ssh://git@github.com/mylogin/hello.git
+    dest: /home/mylogin/hello

@@ -1,0 +1,5 @@
+
+[consul_servers] 
+ localhost
+# consul[1-3]
+

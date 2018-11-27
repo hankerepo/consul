@@ -1,0 +1,10 @@
+
+[consul_servers] 
+  192.168.1.56
+
+
+
+
+[dork]
+# consul[1-3]
+
